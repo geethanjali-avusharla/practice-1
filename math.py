@@ -9,4 +9,7 @@ def multiply(x,y):
     return x*y          #on bug456
 # divide implementation
 def divide(x,y):
-    pass
+    if y==0:            #on master
+        return DIVIDE_BY_0_ERROR;
+    else:
+        return x/y
